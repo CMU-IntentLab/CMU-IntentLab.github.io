@@ -559,6 +559,42 @@ button.button1:hover{
 }*/
 
 
+/* Details/summary dropdown arrow */
+details[open] .details-arrow {
+  display: inline-block;
+  transform: rotate(90deg);
+}
+
+/* People grid */
+.people-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 16px 20px 28px 20px;
+}
+
+.person-card {
+  text-align: center;
+  width: 150px;
+}
+
+.person-photo {
+  width: 130px;
+  height: 130px;
+  border-radius: 15%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 8px auto;
+}
+
+.person-info {
+  line-height: 1.4;
+}
+
+.person-links {
+  margin-top: 6px;
+}
+
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
   .header a {

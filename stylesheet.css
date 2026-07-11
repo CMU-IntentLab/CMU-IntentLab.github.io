@@ -559,6 +559,28 @@ button.button1:hover{
 }*/
 
 
+/* Video grid */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.video-grid video,
+.video-grid img {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 700px) {
+  .video-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /* Hamburger nav toggle button (hidden on desktop) */
 .nav-toggle {
   display: none;
